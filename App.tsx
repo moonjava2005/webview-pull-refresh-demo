@@ -13,8 +13,6 @@ import { RefreshControl, SafeAreaView, ScrollView, StatusBar, StyleSheet, TextIn
 import { WebView } from 'react-native-webview'
 import { WebViewScrollEvent, WebViewSource } from 'react-native-webview/lib/WebViewTypes'
 
-declare const global: { HermesInternal: null | {} }
-
 const App = () => {
     const webViewRef = React.useRef<WebView>(null)
     const [isAtTop, setIsAtTop] = React.useState<boolean>(true)
